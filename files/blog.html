@@ -1,0 +1,225 @@
+<!DOCTYPE html>                                                                                 <!--document type as html-->
+<html lang="de">                                                                                <!--language of the page (important for browsermassages)-->
+
+
+<!--
+blog html for: Studienarbeit Programmierung von Webanwendungsoberflächen
+Description: Fiktive Vereinsseite für zur Registrierung von Kleiderspenden
+
+Version: 1.0
+Author: Riccardo Princiotto
+License: none
+Tags: html5, responsiv, bootstrap, CSS animations, Adobe content
+
+Notices: the named society, the texts and everything on this page is fiction.
+          this page is only a styled template, texts with lorem ipsum generator.
+-->
+
+
+<head>                                                                                          <!--Head area is not visible-->
+
+  <meta charset="utf-8">                                                                      <!--Charset UTF-8-->
+  <meta name="viewport" content="width = device-width, initial-scale = 1.0" />                <!--Viewport initial-->
+  <title>Blog</title>                                                           <!--Text of the tab-->
+  <meta name="description" content="Beschreibungstext">                                       <!--Discription for search engines-->
+  <link rel="shortcut icon" href="../assets/img/logo.gif" />                                  <!--Icon at the tab-->
+  <link rel="stylesheet" href="../assets/css/style.css">                                      <!--Including own Stylesheet-->
+  <link rel="stylesheet" href="../assets/bootstrap-5.2.3-dist/css/bootstrap.min.css">         <!--Including Bootstrap css version 5.2.3-->
+  <link rel="stylesheet" href="../assets/jquery/jquery-ui-1.13.2 (1)/jquery-ui.min.css">      <!--Including jquery UI css version 1.13.2-->
+  <link rel="stylesheet" href="https://use.typekit.net/jef5xjj.css">                          <!--Fonts from adobe creative cloud-->
+  <link rel="stylesheet" href="https://use.typekit.net/jef5xjj.css">
+      
+  <script src="../assets/bootstrap-5.2.3-dist/js/bootstrap.bundle.min.js"></script>           <!--including boostrap js-->
+  <script src="../assets/jquery/jquery-3.6.1.min.js"></script>                                <!--including jQuery version 3.6.1-->
+  <script src="../assets/jquery/jquery-ui-1.13.2 (1)/jquery-ui.min.js"></script>              <!--including jQuery UI version 1.13.2-->
+  <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.1/dist/js.cookie.min.js"></script>
+  
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>               <!--including boostrap js-->
+
+</head>
+
+<!--Start visible area-->
+<body id="body">         
+
+    <!--Header tag with navbar after scroll 1 px or smaller screens
+        Navbar with bootstrap and redesigned css-->
+        <header id="header" >                               
+          <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="../files/index.html">
+              <img src="../assets/img/logo.gif" width="30" height="30" class="d-inline-block align-top" alt="">
+              <span class="logoTextNav">Kleiderspende (fiktiver Verein)</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarFix" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarFix">
+              <ul class="navbar-nav mt-2 mt-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link" href="../files/about.html">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../files/spenden.html">Spenden</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../files/blog.html">Blog</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../files/faq.html">FAQ</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+      </header>
+    
+  <!--Content area split in standard sections (standard sections content area individual)-->
+  <main>
+      <!--logo of the integrated navigation is out of the section content area, only visible on page top-->
+      <section class="section">                                     <!--standard section grid class-->
+        <a href="../files/index.html" class="logoLink">             <!--logo on the left side, link to index.html top-->
+          <img id="logoStart" src="../assets/img/logo.gif">
+        </a>
+        <div id="contentS1">                                      <!--content specified grid (S1 equal on every html)-->
+          <!--integrated navigation links-->        
+            <nav id="navStart">
+                <ul class="navStartList">
+                    <li class="navStartItem">
+                      <a href="../files/about.html">About</a>
+                    </li>
+                    <li class="navStartItem">
+                      <a href="../files/spenden.html">Spenden</a>
+                    </li>
+                    <li class="navStartItem active">
+                      <a href="../files/blog.html">Blog</a>
+                    </li>
+                    <li class="navStartItem">
+                      <a href="../files/faq.html">FAQ</a>
+                    </li>
+                </ul>
+             </nav>
+          <!--Title image with bootstrap class img-fluid for responsiv design-->
+          <img src="../assets/img/ordnung.jpg" id="titleImage" class="titleImage img-fluid">
+          <!--Colored background area for section 1-->
+          <div id="contentS1background" class="contentBlockBackground"></div>
+          <!--Text area for section1 include text-->
+          <div id="contentS1Text">
+            <article id="titleArticle">
+              <h1>Neuerster Blogbeitrag</h1>
+              <!--Text placeholder with lorem ipsum generator-->
+              <p class="pBlog">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, 
+                  sed diam nonumy eirmod tempor invidunt ut labore et 
+                  dolore magna aliquyam erat, sed diam voluptua. 
+                  At vero eos et accusam et justo duo dolores et 
+                  ea rebum. Stet clita kasd gubergren, no sea takimata 
+                  sanctus est Lorem ipsum dolor sit amet. 
+              </p>
+            </article>
+          </div> 
+        </div>
+      </section>
+
+      <!--Section 2 preview of all blog articles as placeholders-->
+      <section class="section">
+        <div id="blogGrid">
+            <div id="blog1" class="prevBlog">
+                <img class="prevBlogImg" src="../assets/img/blog_prev.jpg">
+                <p class="prevBlogText">
+                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr
+                </p>
+            </div>
+            <div id="blog2" class="prevBlog">
+                <img class="prevBlogImg" src="../assets/img/blog_prev.jpg">
+                <p class="prevBlogText">
+                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr
+                </p>
+            </div>
+            <div id="blog3" class="prevBlog">
+                <img class="prevBlogImg" src="../assets/img/blog_prev.jpg">
+                <p class="prevBlogText">
+                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr
+                </p>
+            </div>
+            <div id="blog4" class="prevBlog">
+                <img class="prevBlogImg" src="../assets/img/blog_prev.jpg">
+                <p class="prevBlogText">
+                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr
+                </p>
+            </div>
+            <div id="blog5" class="prevBlog">
+                <img class="prevBlogImg" src="../assets/img/blog_prev.jpg">
+                <p class="prevBlogText">
+                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr
+                </p>
+            </div>
+            <div id="blog6" class="prevBlog">
+                <img class="prevBlogImg" src="../assets/img/blog_prev.jpg">
+                <p class="prevBlogText">
+                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr
+                </p>
+            </div>
+            <div id="blog7" class="prevBlog">
+                <img class="prevBlogImg" src="../assets/img/blog_prev.jpg">
+                <p class="prevBlogText">
+                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr
+                </p>
+            </div>
+            <div id="blog8" class="prevBlog">
+                <img class="prevBlogImg" src="../assets/img/blog_prev.jpg">
+                <p class="prevBlogText">
+                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr
+                </p>
+            </div>
+        </div>
+      </section>
+
+
+    </main>
+
+    <!--footer with three columns-->
+    <footer>
+      <!--first column for contact information-->
+        <div id="contactFooter" class="footerBorder">
+          <h3>Kontakt:</h3>
+          <p>
+            Kleiderspende (fiktiver Verein) <br><br>
+            Musterstraße 55 <br>
+            80xxx München <br>
+            Tel: <a href="tel:+49000000000">+49 xxx xxx xxx</a>
+            <br>
+            Mail: <a href="mailto:info@kleiderspende-fiktiver-verein.de">info@kleiderspende-fiktiver-verein.de</a>
+          </p>
+        </div>
+      <!--second column for legals-->
+        <div id="legalFooter" class="footerBorder">
+          <h3>Rechtliche Hinweise:</h3>
+          <p>
+            <a href="../files/impressum.html" target="_blank">Impressum</a>
+            <br>
+            <a href="../files/datenschutz.html" target="_blank">Datenschutzerklärung</a>
+            <br>
+            &copy; 2023 Kleiderspende (fiktiver Verein)
+          </p>
+        </div>
+      <!--third column for social media links-->
+        <div id="socialmediaFooter">
+          <h3>Follow us:</h3>
+          <br>
+          <a href="https://de-de.facebook.com/" target="_blank">
+          <img src="../assets/img/f_logo_RGB-Blue_58.png" width="58px" height="58px"></a>
+          <br><br>
+          <a href="https://www.instagram.com/" target="_blank">
+          <img src="../assets/img/Instagram_Glyph_Gradient_RGB.png" width="58px" height="58px"></a>
+        </div>
+    </footer>
+  
+    <!--including own javascript file-->
+    <script src="../assets/js/script.js"></script>
+                                                 
+</body>     <!--end of visible area-->
+
+</html>     <!--end of index.html-->
+
+
+
+
