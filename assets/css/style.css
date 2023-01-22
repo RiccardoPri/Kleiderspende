@@ -18,86 +18,84 @@ Universal rules, html-Tag rules
 /********* CSS variables for the grid system ***********/
 
 :root {
-    --m-xxl: 200px;
-    --col-xl: 50px;
-    --col-xxl: 100px;
-    --row-headline: 50px;
-    --row-quantity: 1;
-    --class-id: 1;
-    --row-xxl: 100px;
+  --m-xxl: 200px;
+  --col-xl: 50px;
+  --col-xxl: 100px;
+  --row-headline: 50px;
+  --row-quantity: 1;
+  --class-id: 1;
+  --row-xxl: 100px;
 }
 
 /********* html tags ***********/
 body {
-/********* Defining background image for every html ***********/
+  /********* Defining background image for every html ***********/
 
-    background-image:url(../img/background_img.jpg);
-    background-repeat:space ;
-    background-attachment: fixed;
-    background-position: center;
+  background-image: url(../img/background_img.jpg);
+  background-repeat: space;
+  background-attachment: fixed;
+  background-position: center;
 }
 
 /********* grid template for every section ***********/
 
 section {
-    display: grid;
-    grid-template-columns: var(--col-xxl) 1fr var(--col-xxl); 
-    grid-template-rows: minmax(75px, auto) 1fr var(--row-xxl); 
+  display: grid;
+  grid-template-columns: var(--col-xxl) 1fr var(--col-xxl);
+  grid-template-rows: minmax(75px, auto) 1fr var(--row-xxl);
 }
 
 /********* headline tags ***********/
 
 h1 {
-    text-align: center;
-    font-family: p22-nudgewink-pro,sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    color: white;
-    font-size: 4em !important; 
+  text-align: center;
+  font-family: p22-nudgewink-pro, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: white;
+  font-size: 4em !important;
 }
 
 h2 {
-    text-align: center;
-    font-family: p22-nudgewink-pro,sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    font-size: 3em !important; 
+  text-align: center;
+  font-family: p22-nudgewink-pro, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 3em !important;
 }
 
 h3 {
-    padding-top: 10px;
-    font-family: p22-nudgewink-pro,sans-serif;
-    font-weight: 500;
-    font-style: normal;
-    font-size: 2em !important; 
+  padding-top: 10px;
+  font-family: p22-nudgewink-pro, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 2em !important;
 }
 
 p {
+  /********* global style rules for p tags ***********/
 
-/********* global style rules for p tags ***********/
-
-    font-family: calendula, sans-serif;
-    font-weight: 400;
-    font-style: normal;
+  font-family: calendula, sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 p a {
+  /********* global style rules for a tags inside a p tag ***********/
 
-/********* global style rules for a tags inside a p tag ***********/
-
-    text-decoration: none;
-    color: black;
+  text-decoration: none;
+  color: black;
 }
 
 /********* defining footer for every html ***********/
 
 footer {
-    height: 300px;
-    margin-top: var(--m-xxl);
-    display: grid;
-    grid-template-columns: var(--col-xxl) repeat(3, 1fr) var(--col-xxl);
-    grid-template-rows: 1fr;
-    background-color: #E7E8EC;
+  height: 300px;
+  margin-top: var(--m-xxl);
+  display: grid;
+  grid-template-columns: var(--col-xxl) repeat(3, 1fr) var(--col-xxl);
+  grid-template-rows: 1fr;
+  background-color: #e7e8ec;
 }
 
 /********************************************************************************
@@ -107,101 +105,104 @@ footer {
 /********* first content section of every html
             get`s own grid after positioning  ***********/
 #contentS1 {
-    grid-column: 2;
-    grid-row: 1;
-    display: grid;
-    grid-template-columns: 1fr 0.5fr 25px 1fr var(--col-xl);
+  grid-column: 2;
+  grid-row: 1;
+  display: grid;
+  grid-template-columns: 1fr 0.5fr 25px 1fr var(--col-xl);
 }
 
 /********* integrated navigation on top of the side  ***********/
 #navStart {
-    list-style-type: none;
-    grid-column: 4;
-    grid-row: 1;
-    z-index: 2;
-    padding-top: 40px; 
-    justify-self: right;  
+  list-style-type: none;
+  grid-column: 4;
+  grid-row: 1;
+  z-index: 2;
+  padding-top: 40px;
+  justify-self: right;
 }
 /********************* fixed navigation ********************/
-#navbarFix{
-    justify-content: right !important;
-    margin-right: 50px !important;
+#navbarFix {
+  justify-content: right !important;
+  margin-right: 50px !important;
 }
 
 #logoStart {
-    margin: 0;
-    padding: 5px 0 0 5px;
-    grid-column: 1;
-    grid-row: 1;
-    max-height: 75px;
+  margin: 0;
+  padding: 5px 0 0 5px;
+  grid-column: 1;
+  grid-row: 1;
+  max-height: 75px;
 }
 
 /********* Positioning the title image of the first section  ***********/
 #titleImage {
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row: 1;
-    z-index: 1;
-    margin-top: 100px;
-    margin-bottom: 100px;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row: 1;
+  z-index: 1;
+  margin-top: 100px;
+  margin-bottom: 100px;
 }
 /********* Positioning the background of the first section  ***********/
 #contentS1background {
-    grid-column-start: 2;
-    grid-column-end: 6;
-    grid-row: 1;
-    z-index: 0;
+  grid-column-start: 2;
+  grid-column-end: 6;
+  grid-row: 1;
+  z-index: 0;
 }
 /********* Positioning and sizing the text area of the first section
             define a new grid with rows inside  ***********/
 #contentS1Text {
-    grid-column: 4;
-    grid-row: 1;
-    z-index: 1;
-    display: grid;
-    grid-template-rows: 1fr 0.25fr;
-    margin-top: 100px;
-    margin-bottom: 100px;
+  grid-column: 4;
+  grid-row: 1;
+  z-index: 1;
+  display: grid;
+  grid-template-rows: 1fr 0.25fr;
+  margin-top: 100px;
+  margin-bottom: 100px;
 }
 /********* Positioning the article of the first section  ***********/
 #titleArticle {
-    grid-column: 1;
-    grid-row: 1;
-    align-self: center;
-    justify-self: center;
+  grid-column: 1;
+  grid-row: 1;
+  align-self: center;
+  justify-self: center;
 }
 /********* Positioning and sizing the button of the first section  ***********/
 #buttonDonate {
-    grid-column: 1;
-    grid-row: 2;
-    max-width: 50%;
-    max-height: 75%;
-    align-self: center;
-    justify-self: center !important;
+  grid-column: 1;
+  grid-row: 2;
+  max-width: 50%;
+  max-height: 75%;
+  align-self: center;
+  justify-self: center !important;
 }
 /************ positioning the headline of other sections *****************/
-#h2S2, #h2S3, #h2S4, #h2S5, #h1S1 {
-    grid-column: 2;
-    grid-row: 1;
-    align-self: baseline;
-    justify-self: center;
-    margin-top: 50px;
-    margin-bottom: 25px;
-    z-index: 2;
+#h2S2,
+#h2S3,
+#h2S4,
+#h2S5,
+#h1S1 {
+  grid-column: 2;
+  grid-row: 1;
+  align-self: baseline;
+  justify-self: center;
+  margin-top: 50px;
+  margin-bottom: 25px;
+  z-index: 2;
 }
 /************ positioning footer colums *****************/
 #contactFooter {
-    grid-column: 2;
+  grid-column: 2;
 }
 #legalFooter {
-    grid-column: 3;
-    padding-left: 10px;
+  grid-column: 3;
+  padding-left: 10px;
 }
 #socialmediaFooter {
-    grid-column: 4;
-    padding-left: 10px;
+  grid-column: 4;
+  padding-left: 10px;
 }
-
 
 /********************************************************************************
                         universal rules for styling
@@ -212,99 +213,105 @@ footer {
 
 /********* ul tag of nav  ***********/
 .navStartList {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 /********* size of link area of the logo  ***********/
 .logoLink {
-    max-height: 75px;
+  max-height: 75px;
 }
 /********* styling items of the start nav  ***********/
 .navStartItem {
-    display: inline-block;
-    padding: 0 12px 0 12px;
-    font-weight: 500;
-    font-size: 20px;
+  display: inline-block;
+  padding: 0 12px 0 12px;
+  font-weight: 500;
+  font-size: 20px;
 }
 /********* styling a tags after the start nav items  ***********/
 .navStartItem a {
-    text-decoration: none;
-    color: #fde368;
-    transition: ease-in-out;
+  text-decoration: none;
+  color: #fde368;
+  transition: ease-in-out;
 }
 /********* styling a tags of start nav on hover  ***********/
 .navStartItem a:hover {
-    color: white;
-    font-size: 125%;
-    transition: 0.25s ease-in-out;
+  color: white;
+  font-size: 125%;
+  transition: 0.25s ease-in-out;
 }
 
 /***************** fixed bootstrap navigation  ***********************
 *****************************************************************************/
 
 .navbar {
-    opacity: 80% !important;
-    height: 40px !important;
+  opacity: 80% !important;
+  height: 40px !important;
 }
 .navbar-brand {
-    margin-left: 50px;
-    color: #4cb055 !important;
+  margin-left: 50px;
+  color: #4cb055 !important;
 }
 .nav-link {
-    color: #4cb055 !important;
+  color: #4cb055 !important;
 }
 
 .nav-link:hover {
-    font-size: 125%;
-    color: #fde368 !important;
-    transition: 0.25s ease-in-out;
+  font-size: 125%;
+  color: #fde368 !important;
+  transition: 0.25s ease-in-out;
 }
 
 .active a {
-    font-weight: bold !important;
-    text-decoration: underline !important;
+  font-weight: bold !important;
+  text-decoration: underline !important;
 }
 
 /********* styling title image  ***********/
 .titleImage {
-    box-shadow: 0px 1px 6px rgb(0 0 0 / 30%);
-    border-radius: 50px;
+  box-shadow: 0px 1px 6px rgb(0 0 0 / 30%);
+  border-radius: 50px;
 }
 /********* title image effect on hover ***********/
 .titleImage:hover {
-    box-shadow: 20px 20px 20px rgb(0 0 0 / 50%);
+  box-shadow: 20px 20px 20px rgb(0 0 0 / 50%);
 }
 /********* styling background of the first section with standard color ***********/
 .contentS1background {
-    background: rgb(0,36,7);
-    background: linear-gradient(90deg, rgba(0,36,7,1) 0%, rgba(0,172,75,1) 35%, rgba(0,255,102,1) 100%);
-    border-bottom-left-radius: 20px;
-    border-top-left-radius: 20px;
+  background: rgb(0, 36, 7);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 36, 7, 1) 0%,
+    rgba(0, 172, 75, 1) 35%,
+    rgba(0, 255, 102, 1) 100%
+  );
+  border-bottom-left-radius: 20px;
+  border-top-left-radius: 20px;
 }
 /********* styling of the buttons ***********/
-.buttonStyle {  
-    width: 13em;
-    height: 2em;
-    font-size: 1.25em;
-    background: linear-gradient(to bottom, white, yellow);
-    box-shadow: inset 0 0 .3em #fff, inset 0 -1px .3em #fff;
-    border: thin solid #5ea617;
-    border-radius: 1em;
-    margin: 1em;
-    background: linear-gradient(to bottom, white, orange);
+.buttonStyle {
+  width: 13em;
+  height: 2em;
+  font-size: 1.25em;
+  background: linear-gradient(to bottom, white, yellow);
+  box-shadow: inset 0 0 0.3em #fff, inset 0 -1px 0.3em #fff;
+  border: thin solid #5ea617;
+  border-radius: 1em;
+  margin: 1em;
+  background: linear-gradient(to bottom, white, orange);
 }
 /********* styling of the buttons on hover and on focus ***********/
-.buttonStyle:hover, .buttonStyle:focus {
-box-shadow: rgba(0, 0, 0, 0.7) 0px .25em 1em, inset rgba(0, 0, 0, 0.15) 0px -.5em 1em;
+.buttonStyle:hover,
+.buttonStyle:focus {
+  box-shadow: rgba(0, 0, 0, 0.7) 0px 0.25em 1em,
+    inset rgba(0, 0, 0, 0.15) 0px -0.5em 1em;
 }
 /********* styling footer ***********/
 .footerBorder {
-    border-color: gray;
-    border-width: 0px 5px 0px 0px;
-    border-style: solid;
-    box-shadow: 0px 20px 0px 0px gray;
+  border-color: gray;
+  border-width: 0px 5px 0px 0px;
+  border-style: solid;
+  box-shadow: 0px 20px 0px 0px gray;
 }
-
 
 /********************************************************************************
     positioning for index html
@@ -312,118 +319,126 @@ box-shadow: rgba(0, 0, 0, 0.7) 0px .25em 1em, inset rgba(0, 0, 0, 0.15) 0px -.5e
 /************ Section 2 icons how to  *************/
 /************ div of section 2 place in content area and get own grid ***********/
 #contentS2 {
-    grid-column: 2;
-    grid-row: 2;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr 25px 0.25fr 25px) 1fr;
+  grid-column: 2;
+  grid-row: 2;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr 25px 0.25fr 25px) 1fr;
 }
 /************ positioning the icons *****************/
 #icon1 {
-    grid-column: 1;
+  grid-column: 1;
 }
 #icon2 {
-    grid-column: 3;
+  grid-column: 3;
 }
 #icon3 {
-    grid-column: 5;
+  grid-column: 5;
 }
 #icon4 {
-    grid-column: 7;
+  grid-column: 7;
 }
 #icon5 {
-    grid-column: 9;
+  grid-column: 9;
 }
 /************ justfy the icons *****************/
-#icon1, #icon2, #icon3, #icon4, #icon5 {
-    justify-self: center;
+#icon1,
+#icon2,
+#icon3,
+#icon4,
+#icon5 {
+  justify-self: center;
 }
 /************ Section 3 picture caroussel  *************/
 /************ div of section 3 place in content area and get own grid ***********/
 #contentS3 {
-    grid-column: 2;
-    grid-row: 2;
-    display: grid;
-    grid-template-columns: var(--col-xl) 1fr var(--col-xl);
-    grid-template-rows: 1fr minmax(100px, auto);
+  grid-column: 2;
+  grid-row: 2;
+  display: grid;
+  grid-template-columns: var(--col-xl) 1fr var(--col-xl);
+  grid-template-rows: 1fr minmax(100px, auto);
 }
 /************ placing and sizing the control arrows, image and text **********/
 #prevArrow {
-    grid-column: 1;
-    grid-row: 1;
-    transform: rotate(180deg);
-    max-width: 50px;
-    justify-self: center;
+  grid-column: 1;
+  grid-row: 1;
+  transform: rotate(180deg);
+  max-width: 50px;
+  justify-self: center;
 }
 #nextArrow {
-    grid-column: 3;
-    grid-row: 1;
-    max-width: 50px;
-    max-width: 50px;
-    justify-self: center;
+  grid-column: 3;
+  grid-row: 1;
+  max-width: 50px;
+  max-width: 50px;
+  justify-self: center;
 }
-#imgCarousel1, #imgCarousel2, #imgCarousel3 {
-    grid-column: 2;
-    grid-row: 1;
-    max-height: 580px;
-    justify-self: center;
+#imgCarousel1,
+#imgCarousel2,
+#imgCarousel3 {
+  grid-column: 2;
+  grid-row: 1;
+  max-height: 580px;
+  justify-self: center;
 }
-#imgDiscription1, #imgDiscription2, #imgDiscription3 {
-    grid-column: 2;
-    grid-row: 2;
-    justify-self: center;
-    max-width: 500px;
-    margin-top: 20px;
+#imgDiscription1,
+#imgDiscription2,
+#imgDiscription3 {
+  grid-column: 2;
+  grid-row: 2;
+  justify-self: center;
+  max-width: 500px;
+  margin-top: 20px;
 }
 /************ Section 4 blog preview  *************/
 /************ div of section 4 place row ***********/
 #contentS4 {
-    grid-column: 2;
-    grid-row: 2;
-    display: grid;
-    grid-template-columns: 1fr 0.25fr 25px 1fr var(--col-xl);
+  grid-column: 2;
+  grid-row: 2;
+  display: grid;
+  grid-template-columns: 1fr 0.25fr 25px 1fr var(--col-xl);
 }
-#contentS4background{
-    display: grid;
-    grid-column-start: 2;
-    grid-column-end: 6;
-    grid-row: 1;
-    z-index: 0;
+#contentS4background {
+  display: grid;
+  grid-column-start: 2;
+  grid-column-end: 6;
+  grid-row: 1;
+  z-index: 0;
 }
 #blogImg {
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row: 1;
-    z-index: 1;
-    margin-top: 50px;
-    margin-bottom: 50px;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row: 1;
+  z-index: 1;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 #contentS4Text {
-    grid-column: 4;
-    grid-row: 1;
-    z-index: 1;
-    margin-top: 100px;
-    display: grid;
-    grid-template-rows: 1fr minmax(auto, 100px);
+  grid-column: 4;
+  grid-row: 1;
+  z-index: 1;
+  margin-top: 100px;
+  display: grid;
+  grid-template-rows: 1fr minmax(auto, 100px);
 }
 #blog1Article {
-    grid-column: 1;
-    grid-row: 1;
-    align-self: center;
-    justify-self: center;
+  grid-column: 1;
+  grid-row: 1;
+  align-self: center;
+  justify-self: center;
 }
 #prevBlogWrap {
-    grid-column: 1;
-    grid-row: 2;
-    display: grid;
-    grid-template-columns: 1fr 25px 1fr;
+  grid-column: 1;
+  grid-row: 2;
+  display: grid;
+  grid-template-columns: 1fr 25px 1fr;
 }
 #prevBlog2 {
-    grid-column: 1;
-    grid-row: 2;
+  grid-column: 1;
+  grid-row: 2;
 }
 #prevBlog3 {
-    grid-column: 3;
-    grid-row: 2;
+  grid-column: 3;
+  grid-row: 2;
 }
 
 /********************************************************************************
@@ -431,155 +446,160 @@ box-shadow: rgba(0, 0, 0, 0.7) 0px .25em 1em, inset rgba(0, 0, 0, 0.15) 0px -.5e
 *********************************************************************************/
 /************ Section 2 icons how to  *************/
 /************ style of the icons *****************/
-.iconType1{
-    max-width: 200px;
-    max-height: 200px;
-    align-self: top;
-    transition: all 1s ease-in-out;
+.iconType1 {
+  max-width: 200px;
+  max-height: 200px;
+  align-self: top;
+  transition: all 1s ease-in-out;
 }
 /******** animate icontype1 on hover *************/
 .iconType1:hover {
-    transform: rotate(360deg);
+  transform: rotate(360deg);
 }
 .iconType2 {
-    max-width: 50px;
-    max-height: 100px;
-    margin-top: 50px;
-    justify-content: center;
-    align-self: top;
+  max-width: 50px;
+  max-height: 100px;
+  margin-top: 50px;
+  justify-content: center;
+  align-self: top;
 }
 /*********** text under the icons *************/
 .pIcons {
-    color: #4CB055;
-    margin-top: 10px;
-    font-size: 125%;
-    font-weight: 600;
-    text-align: center;
+  color: #4cb055;
+  margin-top: 10px;
+  font-size: 125%;
+  font-weight: 600;
+  text-align: center;
 }
 /************ Section 3 picture carousel *************/
 /*********** style button arrows *************/
 .buttonCarousel {
-    border: none;
-    cursor: pointer;
-    appearance: none;
-    max-height: 50px;
-    align-self: center;
-    background-color: transparent;
+  border: none;
+  cursor: pointer;
+  appearance: none;
+  max-height: 50px;
+  align-self: center;
+  background-color: transparent;
 }
 .buttonCarousel:hover {
-    transition: .2 ease-in-out;
-    transform: scale(1.25);   
+  transition: 0.2 ease-in-out;
+  transform: scale(1.25);
 }
 /*********** style and display images of carousel *************/
 .imgCarousel {
-    box-shadow: 0px 1px 6px rgb(0 0 0 / 30%);
-    border-radius: 50px;   
+  box-shadow: 0px 1px 6px rgb(0 0 0 / 30%);
+  border-radius: 50px;
 }
 .CarouselItemDisable {
-    display: none;
+  display: none;
 }
 /*********** style image discription of carousel *************/
 .imgDiscription {
-    font-size: 2.5em !important;
+  font-size: 2.5em !important;
 }
 /************ Section 4 preview Blog.html*************/
 .blogBigImage {
-    box-shadow: 0px 1px 6px rgb(0 0 0 / 30%);
-    border-radius: 25px; 
+  box-shadow: 0px 1px 6px rgb(0 0 0 / 30%);
+  border-radius: 25px;
 }
 .contentBlockBackground {
-    background: rgb(60,0,105);
-    background: linear-gradient(90deg, rgba(60,0,105,1) 0%, rgba(150,30,122,1) 50%, rgba(255,138,244,1) 100%);
-    border-bottom-left-radius: 20px;
-    border-top-left-radius: 20px;
+  background: rgb(60, 0, 105);
+  background: linear-gradient(
+    90deg,
+    rgba(60, 0, 105, 1) 0%,
+    rgba(150, 30, 122, 1) 50%,
+    rgba(255, 138, 244, 1) 100%
+  );
+  border-bottom-left-radius: 20px;
+  border-top-left-radius: 20px;
 }
 .prevBlogImg {
-    max-width: 250px;
-    max-height: 250px;
-    z-index: 2;
-    padding-top: 20px;
+  max-width: 250px;
+  max-height: 250px;
+  z-index: 2;
+  padding-top: 20px;
 }
 .prevBlog {
-    max-width: 250px;
-    background-color: #961E7A;
-    box-shadow: 0px 1px 6px rgb(0 0 0 / 30%);
-    border-radius: 5px;
-    color: white;   
+  max-width: 250px;
+  background-color: #961e7a;
+  box-shadow: 0px 1px 6px rgb(0 0 0 / 30%);
+  border-radius: 5px;
+  color: white;
 }
 .prevBlog:hover {
-    transition: 1s ease-in-out;
-    transform:scale(1.25);
+  transition: 1s ease-in-out;
+  transform: scale(1.25);
 }
 .prevBlogImg:hover {
-    filter: grayscale(1);
+  filter: grayscale(1);
 }
-.pBlogHeadline{
-    color: white;
+.pBlogHeadline {
+  color: white;
 }
 .prevBlogText {
-    padding: 10px 5px 20px 5px;
-    text-align: center;    
+  padding: 10px 5px 20px 5px;
+  text-align: center;
 }
 .pBlog {
-    color: white;
+  color: white;
 }
 
 /********************************************************************************
     positioning for about html
 *********************************************************************************/
-#textS2{
-    grid-column: 2;
-    grid-row: 2;
-    text-align: center;
+#textS2 {
+  grid-column: 2;
+  grid-row: 2;
+  text-align: center;
 }
 #contentS3About {
-    grid-column: 2;
-    grid-row: 2;
-    display: grid;
-    grid-template-columns: 1fr var(--col-xl) 1fr;
-    grid-template-rows: minmax(100px, auto) 1fr;
+  grid-column: 2;
+  grid-row: 2;
+  display: grid;
+  grid-template-columns: 1fr var(--col-xl) 1fr;
+  grid-template-rows: minmax(100px, auto) 1fr;
 }
 #contentS3AboutText {
-    grid-column-start: 1;
-    grid-column-end: 5;
-    grid-row: 1;
-    text-align: center;
-    justify-self: center;
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row: 1;
+  text-align: center;
+  justify-self: center;
 }
 #allowedList {
-    grid-column: 1;
-    grid-row: 2;
-    list-style-type: none;
-    padding: 0;
-    justify-self: center;
+  grid-column: 1;
+  grid-row: 2;
+  list-style-type: none;
+  padding: 0;
+  justify-self: center;
 }
 #notAllowedList {
-    grid-column: 3;
-    grid-row: 2;
-    list-style-type: none;
-    padding: 0;
-    justify-self: center;
+  grid-column: 3;
+  grid-row: 2;
+  list-style-type: none;
+  padding: 0;
+  justify-self: center;
 }
 #contentS4About {
-    grid-column: 2;
-    grid-row: 2;
-    align-self: center;
-    text-align: center;
+  grid-column: 2;
+  grid-row: 2;
+  align-self: center;
+  text-align: center;
 }
 
 /********************************************************************************
     style for about html
 *********************************************************************************/
 .textS2 {
-    margin: 0px 200px 0px 200px;
+  margin: 0px 200px 0px 200px;
 }
 .items {
-    border: black solid 2px;
-    border-radius: 30px;
-    height: 60px;
-    padding: 2.5px 0 0 2.5px;
-    width: 250px;
-    margin: 20px 10px 0px 10px;
+  border: black solid 2px;
+  border-radius: 30px;
+  height: 60px;
+  padding: 2.5px 0 0 2.5px;
+  width: 250px;
+  margin: 20px 10px 0px 10px;
 }
 
 /********************************************************************************
@@ -588,760 +608,801 @@ box-shadow: rgba(0, 0, 0, 0.7) 0px .25em 1em, inset rgba(0, 0, 0, 0.15) 0px -.5e
 /************ Section 2 personal data  *************/
 /************ div of section 2 place in content area and get own grid ***********/
 #contentS2Donate {
-    grid-column: 2;
-    grid-row: 2;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(5, 100px) 1fr 200px repeat(3, 100px);
+  grid-column: 2;
+  grid-row: 2;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(5, 100px) 1fr 200px repeat(3, 100px);
 }
 #h3bringOrCollect {
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row: 1;
-    justify-self: center;
-    margin-bottom: 25px;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row: 1;
+  justify-self: center;
+  margin-bottom: 25px;
 }
 #bringRadio {
-    grid-column: 1; 
-    grid-row: 2;  
-    justify-self: center;
+  grid-column: 1;
+  grid-row: 2;
+  justify-self: center;
 }
 #collectRadio {
-    grid-column: 2;
-    grid-row: 2;
-    justify-self: center;
+  grid-column: 2;
+  grid-row: 2;
+  justify-self: center;
 }
-#pBring, #pCollect {
-    display: none;
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row: 3;
-    margin-top: 25px;
-    text-align: center;
+#pBring,
+#pCollect {
+  display: none;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row: 3;
+  margin-top: 25px;
+  text-align: center;
 }
 #emptyPlaceholder {
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row: 3;
-    margin-top: 25px;
-    text-align: center;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row: 3;
+  margin-top: 25px;
+  text-align: center;
 }
 #chooseLocation {
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row: 4;
-    justify-self: center;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row: 4;
+  justify-self: center;
 }
 #headlineData {
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row: 5;
-    justify-self: center;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row: 5;
+  justify-self: center;
 }
 #personalDataIndependend {
-    grid-column: 1;
-    grid-row: 6;
-    justify-self: right;
-    margin-right: 20px;
+  grid-column: 1;
+  grid-row: 6;
+  justify-self: right;
+  margin-right: 20px;
 }
 #personalDataDependence {
-        grid-column: 2;
-        grid-row: 6;
-        justify-self: left;
-        margin-left: 20px;
+  grid-column: 2;
+  grid-row: 6;
+  justify-self: left;
+  margin-left: 20px;
 }
 #chooseWarArea {
-    display: grid;
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row: 7;
-    justify-self: center;
-    align-self: center;
+  display: grid;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row: 7;
+  justify-self: center;
+  align-self: center;
 }
 #textAfterPersonalData {
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row: 8;
-    justify-self: center;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row: 8;
+  justify-self: center;
 }
 #submitPersonalData {
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row: 9;
-    justify-self: center;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row: 9;
+  justify-self: center;
 }
 #textAfterSubmit {
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row: 10;
-    justify-self: center;
-    text-align: center;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row: 10;
+  justify-self: center;
+  text-align: center;
 }
 /************ Section 4 registrate donations  *************/
 /************ div of section 4 place in content area and get own grid ***********/
 #contentS4Donate {
-    grid-column: 2;
-    grid-row: 2;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, 100px);
+  grid-column: 2;
+  grid-row: 2;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 100px);
 }
 #dropdownForWho {
-    grid-column: 1;
-    grid-row: 1;
-    justify-self: center;
-    align-self: center;
+  grid-column: 1;
+  grid-row: 1;
+  justify-self: center;
+  align-self: center;
 }
 #dropdownCategory {
-    grid-column: 2;
-    grid-row: 1;
-    justify-self: center;
-    align-self: center;
+  grid-column: 2;
+  grid-row: 1;
+  justify-self: center;
+  align-self: center;
 }
 #dropdownSize {
-    grid-column: 3;
-    grid-row: 1;
-    justify-self: center;
-    align-self: center;
+  grid-column: 3;
+  grid-row: 1;
+  justify-self: center;
+  align-self: center;
 }
 #dropdownColor {
-    grid-column: 4;
-    grid-row: 1;
-    justify-self: center;
-    align-self: center;
+  grid-column: 4;
+  grid-row: 1;
+  justify-self: center;
+  align-self: center;
 }
 #addNew {
-    grid-column-start: 1;
-    grid-column-end: 5;
-    grid-row: 2;
-    justify-self: center;
-    align-self: center;
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row: 2;
+  justify-self: center;
+  align-self: center;
 }
 /************ Section 5 summery of the donations  *************/
 #tblSpende {
-    grid-column: 2;
-    grid-row: 2;
-    text-align: center;
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: var(--row-headline) repeat(var(--row-quantity), 1fr) var(--row-headline);
+  grid-column: 2;
+  grid-row: 2;
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: var(--row-headline) repeat(var(--row-quantity), 1fr) var(
+      --row-headline
+    );
 }
-#tblSpendeHead1, #tblSpendeHead2, #tblSpendeHead3, #tblSpendeHead4, #tblSpendeHead5 {
-    grid-row: 1;
+#tblSpendeHead1,
+#tblSpendeHead2,
+#tblSpendeHead3,
+#tblSpendeHead4,
+#tblSpendeHead5 {
+  grid-row: 1;
 }
 #footS5Contribute {
-    grid-column-start: 1;
-    grid-column-end: 9;
-    justify-self: center;
-    grid-row: -1; 
+  grid-column-start: 1;
+  grid-column-end: 9;
+  justify-self: center;
+  grid-row: -1;
 }
 
 /********************************************************************************
     style for spenden html
 *********************************************************************************/
 /************ Section 2-4 personal data and donation *************/
-#bring, #collect {
-    height: 25px;
-    width: 25px;
-    margin-top: 6.5px;  
+#bring,
+#collect {
+  height: 25px;
+  width: 25px;
+  margin-top: 6.5px;
 }
-#bring:checked, #collect:checked {
-    background: #4CB055;
-    border-color: black;
-    box-shadow: 0px 1px 6px rgb(0 0 0 / 100%);
-} 
-#bring:focus, #collect:focus {
-    border-color: gray;
-    box-shadow: 0px 1px 6px rgb(0 0 0 / 100%);
+#bring:checked,
+#collect:checked {
+  background: #4cb055;
+  border-color: black;
+  box-shadow: 0px 1px 6px rgb(0 0 0 / 100%);
 }
-#bringRadio label, #collectRadio label, .pBring, .pCollect, .labelDropdown, .labelInputField {
-    font-size: 125%;
-    font-family: calendula, sans-serif;
-    font-weight: 400;
-    font-style: normal;  
+#bring:focus,
+#collect:focus {
+  border-color: gray;
+  box-shadow: 0px 1px 6px rgb(0 0 0 / 100%);
+}
+#bringRadio label,
+#collectRadio label,
+.pBring,
+.pCollect,
+.labelDropdown,
+.labelInputField {
+  font-size: 125%;
+  font-family: calendula, sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 .smallText {
-    font-size: 50%;
+  font-size: 50%;
 }
-.form-select:focus, .form-control:focus {
-    border-color: #4CB055 !important;
-    box-shadow: 10px -5px 5px #4CB055 !important;
+.form-select:focus,
+.form-control:focus {
+  border-color: #4cb055 !important;
+  box-shadow: 10px -5px 5px #4cb055 !important;
 }
-.form-control {   
-    width: 200px !important;
+.form-control {
+  width: 200px !important;
 }
 .pBig {
-    font-size: 125%;
+  font-size: 125%;
 }
 /************ Section 5 summery of the donation  *************/
 .articleNew {
-    align-self: center;
+  align-self: center;
 }
-
 
 /********************************************************************************
     positioning for blog html
 *********************************************************************************/
 #blogGrid {
-    grid-column: 2;
-    grid-row: 2;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr var(--col-xl)) 1fr;
-    grid-template-rows: 1fr 50px 1fr;
+  grid-column: 2;
+  grid-row: 2;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr var(--col-xl)) 1fr;
+  grid-template-rows: 1fr 50px 1fr;
 }
 #blog1 {
-    grid-column: 1;
-    grid-row: 1;
+  grid-column: 1;
+  grid-row: 1;
 }
 #blog2 {
-    grid-column: 3;
-    grid-row: 1;
+  grid-column: 3;
+  grid-row: 1;
 }
 #blog3 {
-    grid-column: 5;
-    grid-row: 1;
+  grid-column: 5;
+  grid-row: 1;
 }
 #blog4 {
-    grid-column: 7;
-    grid-row: 1;
+  grid-column: 7;
+  grid-row: 1;
 }
 #blog5 {
-    grid-column: 1;
-    grid-row: 3;
+  grid-column: 1;
+  grid-row: 3;
 }
 #blog6 {
-    grid-column: 3;
-    grid-row: 3;
+  grid-column: 3;
+  grid-row: 3;
 }
 #blog7 {
-    grid-column: 5;
-    grid-row: 3;
+  grid-column: 5;
+  grid-row: 3;
 }
 #blog8 {
-    grid-column: 7;
-    grid-row: 3;
+  grid-column: 7;
+  grid-row: 3;
 }
-
 
 /********************************************************************************
     style for blog html
 *********************************************************************************/
 .blogSmall {
-    max-width: 250px;
-    background-color: #961E7A;
-    box-shadow: 0px 1px 6px rgb(0 0 0 / 30%);
-    justify-self: center;
+  max-width: 250px;
+  background-color: #961e7a;
+  box-shadow: 0px 1px 6px rgb(0 0 0 / 30%);
+  justify-self: center;
 }
 .backgroundBlog {
-    background: rgb(60,0,105) !important;
-    background: linear-gradient(90deg, rgba(60,0,105,1) 0%, rgba(150,30,122,1) 50%, rgba(255,138,244,1) 100%) !important;
+  background: rgb(60, 0, 105) !important;
+  background: linear-gradient(
+    90deg,
+    rgba(60, 0, 105, 1) 0%,
+    rgba(150, 30, 122, 1) 50%,
+    rgba(255, 138, 244, 1) 100%
+  ) !important;
 }
-
-
 
 /********************************************************************************
     positioning for faq html
 *********************************************************************************/
 #accordionPosition {
-    grid-column: 2;
-    grid-row: 2;
-    margin-left: var(--m-xxl);
-    margin-right: var(--m-xxl);
+  grid-column: 2;
+  grid-row: 2;
+  margin-left: var(--m-xxl);
+  margin-right: var(--m-xxl);
 }
-
 
 /********************************************************************************
     style for faq html
 *********************************************************************************/
-.ui-accordion-header.ui-state-active { 
-    background-color: #4CB055; 
-    box-shadow: 0px 1px 6px rgb(0 0 0 / 30%);
-    border-color: #4CB055;
+.ui-accordion-header.ui-state-active {
+  background-color: #4cb055;
+  box-shadow: 0px 1px 6px rgb(0 0 0 / 30%);
+  border-color: #4cb055;
 }
-
 
 /********************************************************************************
     positioning for blog_name html
 *********************************************************************************/
 
-
-
 /********************************************************************************
     style for blog_name html
 *********************************************************************************/
-
 
 /********************************************************************************
     positioning for finish html
 *********************************************************************************/
 #contentS1Finish {
-    grid-column: 2;
-    grid-row: 2;
-    display: grid;
-    grid-template-rows: repeat(5, 100px) 1fr;
+  grid-column: 2;
+  grid-row: 2;
+  display: grid;
+  grid-template-rows: repeat(5, 100px) 1fr;
 }
-#h2-1{
-    grid-row: 1;
+#h2-1 {
+  grid-row: 1;
 }
 #tablePersonalData {
-    grid-row: 2;
+  grid-row: 2;
 }
 #tablePersonalData2 {
-    grid-row: 3;
+  grid-row: 3;
 }
-#finishLocation{
-    grid-row: 4;
+#finishLocation {
+  grid-row: 4;
 }
-#h2-2{
-    grid-row: 5;
+#h2-2 {
+  grid-row: 5;
 }
 #tableDonation {
-    grid-row: 6;
+  grid-row: 6;
 }
-
 
 /********************************************************************************
     style for finish html
 *********************************************************************************/
 .h1Black {
-    color: black !important;
+  color: black !important;
 }
-
 
 /********************************************************************************
     @media max-width 1400 px
 *********************************************************************************/
 @media screen and (max-width: 1400px) {
-    :root {
-        --col-xxl: 50px;
-    }
+  :root {
+    --col-xxl: 50px;
+  }
 }
-
 
 /********************************************************************************
     @media max-width 1200 px
 *********************************************************************************/
 @media screen and (max-width: 1200px) {
-    :root {
-        --col-xxl: 0px;
-        --col-xl: 25px;
-    }
-    h1 {
-        font-size: 3.5em !important; 
-    }
-    #titleImage, #blogImg {
-        margin-left: 10px;
-    }
-    #contentS3 {
-        grid-template-columns: 100px 1fr 100px;
-    }
-    #contactFooter {
-        padding-left: 10px;
-    }
-    #blogGrid {
-        margin: 0px 20px 0px 20px;
-    }
+  :root {
+    --col-xxl: 0px;
+    --col-xl: 25px;
+  }
+  h1 {
+    font-size: 3.5em !important;
+  }
+  #titleImage,
+  #blogImg {
+    margin-left: 10px;
+  }
+  #contentS3 {
+    grid-template-columns: 100px 1fr 100px;
+  }
+  #contactFooter {
+    padding-left: 10px;
+  }
+  #blogGrid {
+    margin: 0px 20px 0px 20px;
+  }
 }
-
 
 /********************************************************************************
     @media max-width 991px
 *********************************************************************************/
 @media screen and (max-width: 991px) {
-    :root {
-        --row-xxl: 50px;
-        --m-xxl: 150px;
-    }
-    #navbarFix {
-        text-align: end !important;
-        margin-right: 10px !important;
-    }
-    #contentS2 {
-        grid-template-columns: repeat(2, 1fr 5px 0.25fr 5px) 1fr;
-    }
-    #contentS2Donate {
-        margin-left: 10px;
-        margin-right: 10px;
-    }
-/************ adjust styles for text, headlines, navigation  *************/
-    h1 {
-        font-size: 2.5em !important; 
-    }
-    h2 {
-        font-size: 2em;
-    }
-    .navbar {
-        opacity: 100% !important;
-        height: 55px !important;
-    }
-    .nav-link {
-        background-color: white;
-        font-weight: 600;
-        text-align: center;
-        width: 200px;
-    }
-    .navbar-toggler {
-        margin-right: 10px;
-    }
-    .prevBlogImg {
-        max-width: 200px;
-        max-height: 200px;
-    }
-    .prevBlog {
-        max-width: 200px;
-    }
-    .prevBlog:hover {
-        transform:scale(1.15);
-    }
-    .textS2 {
-        margin: 0px 100px 0px 100px;
-    }  
-    
-/************ adjust grid system for blog html  *************/  
-    #blogGrid {
-        grid-template-columns: repeat(2, 1fr var(--col-xl)) 1fr;
-        grid-template-rows: 1fr 25px 1fr 25px 1fr;
-    }
+  :root {
+    --row-xxl: 50px;
+    --m-xxl: 150px;
+  }
+  #navbarFix {
+    text-align: end !important;
+    margin-right: 10px !important;
+  }
+  #contentS2 {
+    grid-template-columns: repeat(2, 1fr 5px 0.25fr 5px) 1fr;
+  }
+  #contentS2Donate {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  /************ adjust styles for text, headlines, navigation  *************/
+  h1 {
+    font-size: 2.5em !important;
+  }
+  h2 {
+    font-size: 2em;
+  }
+  .navbar {
+    opacity: 100% !important;
+    height: 55px !important;
+  }
+  .nav-link {
+    background-color: white;
+    font-weight: 600;
+    text-align: center;
+    width: 200px;
+  }
+  .navbar-toggler {
+    margin-right: 10px;
+  }
+  .prevBlogImg {
+    max-width: 200px;
+    max-height: 200px;
+  }
+  .prevBlog {
+    max-width: 200px;
+  }
+  .prevBlog:hover {
+    transform: scale(1.15);
+  }
+  .textS2 {
+    margin: 0px 100px 0px 100px;
+  }
 
-    #blog4 {
-        grid-column: 1;
-        grid-row: 3;
-    }
-    #blog5 {
-        grid-column: 3;
-        grid-row: 3;
-    }
-    #blog6 {
-        grid-column: 5;
-        grid-row: 3;
-    }
-    #blog7 {
-        grid-column: 1;
-        grid-row: 5;
-    }
-    #blog8 {
-        grid-column: 3;
-        grid-row: 5;
-    }
+  /************ adjust grid system for blog html  *************/
+  #blogGrid {
+    grid-template-columns: repeat(2, 1fr var(--col-xl)) 1fr;
+    grid-template-rows: 1fr 25px 1fr 25px 1fr;
+  }
+
+  #blog4 {
+    grid-column: 1;
+    grid-row: 3;
+  }
+  #blog5 {
+    grid-column: 3;
+    grid-row: 3;
+  }
+  #blog6 {
+    grid-column: 5;
+    grid-row: 3;
+  }
+  #blog7 {
+    grid-column: 1;
+    grid-row: 5;
+  }
+  #blog8 {
+    grid-column: 3;
+    grid-row: 5;
+  }
 }
 
 /********************************************************************************
     @media min-width 768px
 *********************************************************************************/
 @media screen and (max-width: 768px) {
-    :root {
-        --col-xl: 10px;
-        --m-xxl: 50px;
-    }
-    section {
-        grid-template-rows: minmax(25px, auto) 1fr 25px; 
-    }
-/********************* adjust styles for text, headlines  ***********************/
-    h1 {
-        font-size: 2em !important;
-    }
-    h2 {
-        font-size: 1.5em !important;
-    }
-    p {
-        font-size: 0.75em;
-        text-align: center !important;
-    }
-    #contentS1Text {
-        grid-template-rows: 1fr 50px;
-        margin-top: 50px;
-        margin-bottom: 50px;
-    }
-    .buttonStyle {
-        margin: 0.5em;
-    }
-    .titleImage {
-        margin-top: 75px !important;
-        margin-bottom: 50px !important;
-    }
-    #contentS1, #contentS4 {
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr minmax(300px, auto) !important;
-    }
-    #titleImage {
-        grid-column: 1;
-        grid-row: 1;
-        margin: 50px 0px 0px 0px !important;
-        border-radius: 0px !important;
-    }
-    #contentS1background, #contentS1Text, #contentS4background, #contentS4Text {
-        grid-column: 1;
-        grid-row: 2;
-        border-radius: 0px;
-        margin: 0px !important;
-    }
-    #contentS1Text, #contentS4Text {
-        padding-bottom: 20px;
-    }
-    #contentS1Text p, #contentS4Text p {
-        font-size: 0.9em;
-        color: white;
-        padding-left: 10px;
-        padding-right: 10px;
-        text-align: center;
-    }
-    #blogImg, .blogBigImage {
-        grid-column: 1;
-        grid-row: 1;
-        border-radius: 0px;
-        margin: 0px 0px 0px 0px !important;
-    }
-    #prevBlogWrap {
-        justify-self: center !important;
-    }
-/*************** adjust index html content, sizing and positioning  *****************/
-    #contentS2 {
-        margin-left: 10px;
-        margin-right: 10px;
-    }
-    #icon2, #icon4 {
-        display: none;
-    }
-    .pIcons {
-        font-size: 1em !important;
-    }
-    .imgDiscription {
-        font-size: 1.5em !important;
-    }
-    .prevBlogImg {
-        max-width: 150px;
-        max-height: 150px;
-    }
-    .prevBlog {
-        max-width: 150px;
-    }
-    .prevBlog:hover {
-        transform:scale(1);
-    }
-    .imgCarousel {
-        border-radius: 0px !important;
-    }
-/*************** adjust about html content, sizing and positioning  *****************/
-    .textS2 {
-        margin: 0px 20px 0px 20px;
-    }
+  :root {
+    --col-xl: 10px;
+    --m-xxl: 50px;
+  }
+  section {
+    grid-template-rows: minmax(25px, auto) 1fr 25px;
+  }
+  /********************* adjust styles for text, headlines  ***********************/
+  h1 {
+    font-size: 2em !important;
+  }
+  h2 {
+    font-size: 1.5em !important;
+  }
+  p {
+    font-size: 0.75em;
+    text-align: center !important;
+  }
+  #contentS1Text {
+    grid-template-rows: 1fr 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .buttonStyle {
+    margin: 0.5em;
+  }
+  .titleImage {
+    margin-top: 75px !important;
+    margin-bottom: 50px !important;
+  }
+  #contentS1,
+  #contentS4 {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr minmax(300px, auto) !important;
+  }
+  #titleImage {
+    grid-column: 1;
+    grid-row: 1;
+    margin: 50px 0px 0px 0px !important;
+    border-radius: 0px !important;
+  }
+  #contentS1background,
+  #contentS1Text,
+  #contentS4background,
+  #contentS4Text {
+    grid-column: 1;
+    grid-row: 2;
+    border-radius: 0px;
+    margin: 0px !important;
+  }
+  #contentS1Text,
+  #contentS4Text {
+    padding-bottom: 20px;
+  }
+  #contentS1Text p,
+  #contentS4Text p {
+    font-size: 0.9em;
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+  }
+  #blogImg,
+  .blogBigImage {
+    grid-column: 1;
+    grid-row: 1;
+    border-radius: 0px;
+    margin: 0px 0px 0px 0px !important;
+  }
+  #prevBlogWrap {
+    justify-self: center !important;
+  }
+  /*************** adjust index html content, sizing and positioning  *****************/
+  #contentS2 {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  #icon2,
+  #icon4 {
+    display: none;
+  }
+  .pIcons {
+    font-size: 1em !important;
+  }
+  .imgDiscription {
+    font-size: 1.5em !important;
+  }
+  .prevBlogImg {
+    max-width: 150px;
+    max-height: 150px;
+  }
+  .prevBlog {
+    max-width: 150px;
+  }
+  .prevBlog:hover {
+    transform: scale(1);
+  }
+  .imgCarousel {
+    border-radius: 0px !important;
+  }
+  /*************** adjust about html content, sizing and positioning  *****************/
+  .textS2 {
+    margin: 0px 20px 0px 20px;
+  }
 }
-
 
 /********************************************************************************
     @media max-width 576px
 *********************************************************************************/
 @media screen and (max-width: 576px) {
-    #h2S2, #h2S3, #h2S4, #h2S5, #h1S1 {
-        font-size: 2em !important;
-        margin-top: 25px;
-        margin-bottom: 10px;
-    }
-    footer {
-        grid-template-columns: 1fr !important;
-        grid-template-rows: repeat(2, 1fr) !important;
-    }
-    #contactFooter {
-        grid-column: 1;
-        grid-row: 1;
-    }
-    #legalFooter {
-        grid-column: 1;
-        grid-row: 2;
-    }
-    .footerBorder {
-        border-width: 0px 1px 0px 0px;
-        box-shadow: 0px 1px 0px 0px gray;
-    }
-    h3 {
-        font-size: 1.5em !important;
-        text-align: center;
-    }
-/*************** display none for not needed content *****************/
-    .logoTextNav, .prevBlogIndex, #socialmediaFooter  {
-        display: none;
-    }
+  #h2S2,
+  #h2S3,
+  #h2S4,
+  #h2S5,
+  #h1S1 {
+    font-size: 2em !important;
+    margin-top: 25px;
+    margin-bottom: 10px;
+  }
+  footer {
+    grid-template-columns: 1fr !important;
+    grid-template-rows: repeat(2, 1fr) !important;
+  }
+  #contactFooter {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  #legalFooter {
+    grid-column: 1;
+    grid-row: 2;
+  }
+  .footerBorder {
+    border-width: 0px 1px 0px 0px;
+    box-shadow: 0px 1px 0px 0px gray;
+  }
+  h3 {
+    font-size: 1.5em !important;
+    text-align: center;
+  }
+  /*************** display none for not needed content *****************/
+  .logoTextNav,
+  .prevBlogIndex,
+  #socialmediaFooter {
+    display: none;
+  }
 
-/*************** new grid for global and index html, elements under each  *****************/
-    #contentS2 {
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(3, 1fr);
-    }
-    #icon1 {
-        grid-column: 1;
-        grid-row: 1;
-    }
-    #icon3 {
-        grid-column: 1;
-        grid-row: 2;
-    }
-    #icon5 {
-        grid-column: 1;
-        grid-row: 3;
-    }
-    #contentS3 {
-        grid-template-columns: 0px 1fr 0px !important;
-        grid-template-rows: 1fr minmax(100px, auto);
-    }
-    #prev {
-        grid-column: 1;
-        grid-row: 2;
-    }
-    #next {
-        grid-column: 2;
-        grid-row: 2;
-        padding-right: 10px !important;
-        justify-self: right;
-    }
-    #prevArrow, #nextArrow {
-        height: 25px;
-        width: 25px;
-    }
-    .buttonStyle {
-        margin: 0px !important;
-        font-size: small;
-    }
-/*************** new grid for about html, elements under each  *****************/
-    #contentS3About {
-        grid-template-columns: 1fr;
-        grid-template-rows: minmax(100px, auto) 1fr 1fr;
-    }
-    #contentS3AboutText {
-        grid-column: 1 !important;
-    }
-    #allowedList {
-        grid-row: 2;
-    }
-    #notAllowedList {
-        grid-column: 1 !important;
-        grid-row: 3;
-    }
-    .items {
-        border: black solid 1px;
-        width: 225px;
-        margin: 20px 0px 0px 0px;
-    }
+  /*************** new grid for global and index html, elements under each  *****************/
+  #contentS2 {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+  }
+  #icon1 {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  #icon3 {
+    grid-column: 1;
+    grid-row: 2;
+  }
+  #icon5 {
+    grid-column: 1;
+    grid-row: 3;
+  }
+  #contentS3 {
+    grid-template-columns: 0px 1fr 0px !important;
+    grid-template-rows: 1fr minmax(100px, auto);
+  }
+  #prev {
+    grid-column: 1;
+    grid-row: 2;
+  }
+  #next {
+    grid-column: 2;
+    grid-row: 2;
+    padding-right: 10px !important;
+    justify-self: right;
+  }
+  #prevArrow,
+  #nextArrow {
+    height: 25px;
+    width: 25px;
+  }
+  .buttonStyle {
+    margin: 0px !important;
+    font-size: small;
+  }
+  /*************** new grid for about html, elements under each  *****************/
+  #contentS3About {
+    grid-template-columns: 1fr;
+    grid-template-rows: minmax(100px, auto) 1fr 1fr;
+  }
+  #contentS3AboutText {
+    grid-column: 1 !important;
+  }
+  #allowedList {
+    grid-row: 2;
+  }
+  #notAllowedList {
+    grid-column: 1 !important;
+    grid-row: 3;
+  }
+  .items {
+    border: black solid 1px;
+    width: 225px;
+    margin: 20px 0px 0px 0px;
+  }
 
-/*************** new grid for blog html every preview under each *****************/
+  /*************** new grid for blog html every preview under each *****************/
 
-    #blogGrid {
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(8, 1fr 25px);
-    }
-    #blog1, #blog2, #blog3, #blog4, #blog5, #blog6, #blog7, #blog8 {
-        grid-column: 1;
-        justify-self: center;
-    }
-    #blog1 {
-        grid-row: 1;
-    }
-    #blog2 {
-        grid-row: 3;
-    }
-    #blog3 {
-        grid-row: 5;
-    }
-    #blog4 {
-        grid-row: 7;
-    }
-    #blog5 {
-        grid-row: 9;
-    }
-    #blog6 {
-        grid-row: 11;
-    }
-    #blog7 {
-        grid-row: 13;
-    }
-    #blog8 {
-        grid-row: 15;
-    }
+  #blogGrid {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(8, 1fr 25px);
+  }
+  #blog1,
+  #blog2,
+  #blog3,
+  #blog4,
+  #blog5,
+  #blog6,
+  #blog7,
+  #blog8 {
+    grid-column: 1;
+    justify-self: center;
+  }
+  #blog1 {
+    grid-row: 1;
+  }
+  #blog2 {
+    grid-row: 3;
+  }
+  #blog3 {
+    grid-row: 5;
+  }
+  #blog4 {
+    grid-row: 7;
+  }
+  #blog5 {
+    grid-row: 9;
+  }
+  #blog6 {
+    grid-row: 11;
+  }
+  #blog7 {
+    grid-row: 13;
+  }
+  #blog8 {
+    grid-row: 15;
+  }
 
-/*************** for accordion on faq hmtl  *****************/
-    #accordionPosition {
-        margin: 0px !important;
-    }
+  /*************** for accordion on faq hmtl  *****************/
+  #accordionPosition {
+    margin: 0px !important;
+  }
 
-/*************** adjust spenden html texts and style *****************/
-    #contentS2Donate {
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(12, auto);
-    }
-    #h3bringOrCollect, #collectRadio, #pBring, #pCollect, #emptyPlaceholder, #chooseLocation,
-    #headlineData, #personalDataIndependend, #personalDataDependence, #chooseWarArea, #textAfterPersonalData,
-    #submitPersonalData, #textAfterSubmit {
-        grid-column: 1;
-    }
-    #collectRadio {
-        grid-row: 3;
-    }
-    #pBring, #pCollect, #emptyPlaceholder {
-        grid-row: 4;
-    }
-    #chooseLocation {
-        grid-row: 5;
-    }
-    #headlineData {
-        grid-row: 6;
-    }
-    #personalDataIndependend {
-        grid-row: 7;
-        margin: 0px !important;
-        justify-self: center;
-    }
-    #personalDataDependence {
-        grid-row: 8;
-        margin: 0px !important;
-        justify-self: center;
-    }
-    #chooseWarArea {
-        grid-row: 9;
-        margin-top: 25px;
-    }
-    #textAfterPersonalData {
-        grid-row: 10;
-        margin-top: 25px;
-    }
-    #submitPersonalData {
-        grid-row: 11;
-        margin-top: 25px;
-    }
-    #textAfterSubmit {
-        grid-row: 12;
-        margin-top: 25px;
-    }
-/*************** adjust forms for registrating a donation *****************/
-    #contentS4Donate {
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(3, 100px);
-    }
-    #dropdownSize {
-        grid-column: 1;
-        grid-row: 2;
-    }
-    #dropdownColor {
-        grid-column: 2;
-        grid-row: 2;
-    }
-    #addNew {
-        grid-column-end: 3;
-        grid-row: 3;
-    }
-    .labelRadio, .pCollect, .pBring, .labelDropdown, .labelInputField {
-        font-size: 1em !important;
-    }
-/*************** finish page tables *****************/
-    #contentS1Finish {
-        grid-template-rows: repeat(5, auto);
-    }
+  /*************** adjust spenden html texts and style *****************/
+  #contentS2Donate {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(12, auto);
+  }
+  #h3bringOrCollect,
+  #collectRadio,
+  #pBring,
+  #pCollect,
+  #emptyPlaceholder,
+  #chooseLocation,
+  #headlineData,
+  #personalDataIndependend,
+  #personalDataDependence,
+  #chooseWarArea,
+  #textAfterPersonalData,
+  #submitPersonalData,
+  #textAfterSubmit {
+    grid-column: 1;
+  }
+  #collectRadio {
+    grid-row: 3;
+  }
+  #pBring,
+  #pCollect,
+  #emptyPlaceholder {
+    grid-row: 4;
+  }
+  #chooseLocation {
+    grid-row: 5;
+  }
+  #headlineData {
+    grid-row: 6;
+  }
+  #personalDataIndependend {
+    grid-row: 7;
+    margin: 0px !important;
+    justify-self: center;
+  }
+  #personalDataDependence {
+    grid-row: 8;
+    margin: 0px !important;
+    justify-self: center;
+  }
+  #chooseWarArea {
+    grid-row: 9;
+    margin-top: 25px;
+  }
+  #textAfterPersonalData {
+    grid-row: 10;
+    margin-top: 25px;
+  }
+  #submitPersonalData {
+    grid-row: 11;
+    margin-top: 25px;
+  }
+  #textAfterSubmit {
+    grid-row: 12;
+    margin-top: 25px;
+  }
+  /*************** adjust forms for registrating a donation *****************/
+  #contentS4Donate {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 100px);
+  }
+  #dropdownSize {
+    grid-column: 1;
+    grid-row: 2;
+  }
+  #dropdownColor {
+    grid-column: 2;
+    grid-row: 2;
+  }
+  #addNew {
+    grid-column-end: 3;
+    grid-row: 3;
+  }
+  .labelRadio,
+  .pCollect,
+  .pBring,
+  .labelDropdown,
+  .labelInputField {
+    font-size: 1em !important;
+  }
+  /*************** finish page tables *****************/
+  #contentS1Finish {
+    grid-template-rows: repeat(5, auto);
+  }
 }
 /********************************************************************************
     @media max-width 500px - mobile phones vertical
 *********************************************************************************/
 @media screen and (max-width: 300px) {
-
-
-
-
-
- }
+}
